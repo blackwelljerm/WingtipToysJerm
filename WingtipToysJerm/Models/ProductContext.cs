@@ -10,8 +10,9 @@ namespace WingtipToysJerm.Models
     {
         public ProductContext() : base("WingtipToysJerm")
         {
-}
+        }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<CartItem> ShoppingCartItems { get; set; }
     }
 }

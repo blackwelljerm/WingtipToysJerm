@@ -18,11 +18,17 @@ namespace WingtipToysJerm
 
         public IQueryable<Product> GetProduct([QueryString("productID")] int? productId) 
         { 
-            var _db = new WingtipToysJerm.Models.ProductContext(); 
-            IQueryable<Product> query = _db.Products; 
+            var db = new WingtipToysJerm.Models.ProductContext(); 
+            IQueryable<Product> query = db.Products; 
             if (productId.HasValue && productId > 0) 
-            { query = query.Where(p => p.ProductID == productId); } 
-            else { query = null; } return query; 
+            { 
+                query = query.Where(p => p.ProductID == productId); 
+            } 
+            else 
+            {
+                query = null; 
+            } 
+            return query; 
         }
     }
 }
