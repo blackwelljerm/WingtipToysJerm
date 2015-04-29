@@ -40,7 +40,7 @@
                                     <br />
                                     <a href="/AddToCart.aspx?productID=<%#:Item.ProductID %> "> 
                                         <span class ="ProductListItem"> 
-                                            <b>Add To Cart><b> 
+                                            <b>Add To Cart<b> 
                                                 </span > 
                                     </a>
                                 </td>
