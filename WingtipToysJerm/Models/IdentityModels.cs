@@ -95,6 +95,11 @@ namespace WingtipToysJerm
                 response.Redirect("~/");
             }
         }
+
+        internal static void SignIn(ApplicationUserManager manager, ApplicationUser user, bool isPersistent)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 #endregion

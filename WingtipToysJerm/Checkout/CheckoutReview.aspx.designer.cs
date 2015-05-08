@@ -10,6 +10,6 @@
 namespace WingtipToysJerm.Checkout {
     
     
-    public partial class CheckoutStart {
+    public partial class CheckoutReview {
     }
 }

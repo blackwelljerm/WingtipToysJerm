@@ -8,6 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Data.Entity;
 using WingtipToysJerm.Models;
+using WingtipToysJerm.Logic;
 
 namespace WingtipToysJerm
 {
@@ -21,6 +22,10 @@ namespace WingtipToysJerm
 
             // Initialize the product database.
             Database.SetInitializer(new ProductDatabaseInitializer());
+
+            // Create the asministator role and user
+            RoleActions roleActions = new RoleActions();
+            roleActions.createAdmin();
         }
     }
 }
